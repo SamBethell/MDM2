@@ -1,5 +1,6 @@
 text = "hello world"
 text = "I'm making a commit"
+text = "making a diffo commit"
 text = text.split()
 print(text[-1])
 
