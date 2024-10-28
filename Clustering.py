@@ -8,13 +8,14 @@ from sklearn.metrics import silhouette_score
 from sklearn.preprocessing import MinMaxScaler
 
 
-filename_1 = "C:/MDM2/DOHMH_Dog_Bite_Data.csv" # fatal attacks
-filename_2 = "C:/MDM2/dogattackdatabase-USA-fatal - dogattackdatabase-USA-fatal.csv" # non-fatal attacks
+filename_1 = "DOHMH_Dog_Bite_Data.csv" # fatal attacks
+filename_2 = "dogattackdatabase-USA-fatal - dogattackdatabase-USA-fatal.csv" # non-fatal attacks
 
 class DataHandler():
     def __init__(self, filename):
         self.df = pd.read_csv(filename)
         self.filename = filename
+        
     def vectors_non_fatal(self):
         # Drop rows only where 'Vic age' and 'Vic sex' are NaN
         self.df = self.df.dropna(subset=['Vic age', 'Vic sex'])

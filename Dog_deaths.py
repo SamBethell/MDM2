@@ -2,8 +2,7 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 
-filename = r"C:\MDM2\dogattackdatabase-USA-fatal - dogattackdatabase-USA-fatal.csv"  # Use raw string for Windows file path
-
+filename = "dogattackdatabase-USA-fatal - dogattackdatabase-USA-fatal.csv"
 
 class DataHandler():
     def __init__(self, filename):

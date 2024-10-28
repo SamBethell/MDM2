@@ -1,7 +1,6 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 
-
 def dog_attack_rise_per_state():
     dog_attack_data = [
         {"State": "California", "2023": 727, "2022": 675},

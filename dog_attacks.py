@@ -4,8 +4,7 @@ import matplotlib.pyplot as plt
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import accuracy_score
 
-filename = "C:/MDM2/DOHMH_Dog_Bite_Data.csv"
-
+filename = "DOHMH_Dog_Bite_Data.csv"
 
 class DataHandler():
     def __init__(self, filename):
