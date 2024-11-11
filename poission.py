@@ -30,7 +30,7 @@ def get_poission_prob(x, y, value):
 def poission_maker():
     x, y = create_poission(get_mean(predeaths[-10:]))
     print(get_poission_prob(x, y, deaths[-1]))
-    plt.title("Poission Distribution of Fatal Dog Attacks UK (2013-2022 Data)")
+    plt.title("Poisson Distribution of Fatal Dog Attacks UK (2013-2022 Data)")
     plt.xlabel("Number of Fatal Dog Attacks")
     plt.ylabel("Probability")
     plt.bar(x, y)

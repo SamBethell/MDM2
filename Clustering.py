@@ -15,7 +15,7 @@ class DataHandler():
     def __init__(self, filename):
         self.df = pd.read_csv(filename)
         self.filename = filename
-        
+
     def vectors_non_fatal(self):
         # Drop rows only where 'Vic age' and 'Vic sex' are NaN
         self.df = self.df.dropna(subset=['Vic age', 'Vic sex'])
