@@ -63,4 +63,5 @@ def graphic_maker():
     plt.savefig('ukstatsgraphic.pdf')
     plt.show()
 
+poission_maker()
 graphic_maker()
